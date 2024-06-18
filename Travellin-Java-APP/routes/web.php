@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LandingController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -20,11 +21,6 @@ Route::get('/', [LandingController::class, 'index'])->name('landing');
 Route::middleware('auth')->group(function() {
     Route::get('/Testimoni/create', [LandingController::class, 'create'])->name('landing.create');
     Route::post('/Testimoni', [LandingController::class, 'store'])->name('landing.store');
-});
-
-
-Route::get('/', function () {
-    return view('welcome');
 });
 
 Route::get('/login', function () {
