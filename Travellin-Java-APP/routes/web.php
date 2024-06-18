@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\LandingController;
+use App\Providers\Filament\AdminPanelProvider;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -23,8 +24,17 @@ Route::middleware('auth')->group(function() {
     Route::post('/Testimoni', [LandingController::class, 'store'])->name('landing.store');
 });
 
+// Show detail product
+Route::get('/Travels/detail/{id}', [LandingController::class, 'detail'])->name('landing.detail');
+Route::get('/page', [LandingController::class, 'show'])->name('landing.page');
+
+// Search product
+Route::get('/search', [LandingController::class, 'find'])->name('landing.find');
+
 Route::get('/login', function () {
     return redirect('/admin/login');
 })->name('login');
 
 
+
+// Auth::routes();
