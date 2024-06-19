@@ -6,6 +6,7 @@
 - (F0096XB274) – (Naffa Amalia Fitri)
 
 ### Latar Belakang
+<img src="https://drive.google.com/uc?export=view&id=1DWpHCo-vyMF7qGcqPTejqlxcFPPhLZTQ" alt="Logo website" width="400">
 Website `Travellin Java` adalah sebuah platform yang dirancang untuk memudahkan wisatawan dalam menjelajahi Pulau Jawa. Website ini menyediakan berbagai fitur dan informasi penting tentang destinasi wisata, termasuk detail dan foto dari tempat-tempat wisata tersebut.
 
 Berikut link deploynya: [Travellin Java](https://travellinjava.my.id/)
